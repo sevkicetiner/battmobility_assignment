@@ -104,17 +104,6 @@ class ShowOnList extends ConsumerWidget {
               ),
             )
           )
-          // ExpansionTile(
-          //   title: Text(item.name ?? ""),
-          //   // leading: FadeInImage(placeholder: AssetImage('assets/img/img-car-placeholder.jpg'), image: NetworkImage("${BASE_URL}${item.imageUrl ?? ""}"), width: 50,height: 50, ),
-          //   leading: Image.network("${BASE_URL}${item.imageUrl}", width: 50,height: 50, loadingBuilder: (context, child, loadingProgress) =>
-          //   (loadingProgress == null) ? child : Container(child: SizedBox(child: CircularProgressIndicator(), width: 20,height: 20,), width: 50,height: 50,),
-          //       errorBuilder: (context, error, stackTrace) => Image.asset("assets/img/img-car-placeholder.jpg", width: 50,height: 50,)),
-          //   trailing: const Icon(Icons.arrow_drop_down),
-          //   children: <Widget>[
-          //     Text(item.description ?? ""),
-          //   ],
-          // ),
       ).toList())
           : [],
     );

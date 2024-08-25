@@ -100,18 +100,6 @@ class SearchingPage extends ConsumerWidget {
                   IconButton(onPressed: ()=>viewModel.isMap=true, icon: const Icon(Icons.arrow_drop_down_sharp)),
                 ],
               ),
-          // actions: [
-          //    Align(
-          //      alignment: Alignment.bottomRight,
-          //     child: IconButton(
-          //         onPressed: () {
-          //           viewModel.isMap = !viewModel.isMap;
-          //         },
-          //         icon: Icon(viewModel.isMap ? Icons.map : Icons.list)),
-          //   )
-          //   // viewmodel.isMap ? IconButton(onPressed: ()=>viewmodel.isMap=true, icon: const Icon(Icons.map)) :
-          //   // IconButton(onPressed: ()=>viewmodel.isMap=false, icon: const Icon(Icons.list)),
-          // ]
       ),
       body: viewModel.bottomNavCurrentIndex == 0
           ? ShowOnList(

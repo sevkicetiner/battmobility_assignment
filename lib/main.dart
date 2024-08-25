@@ -1,9 +1,7 @@
 import 'package:battmobility_assignment/features/search_car/presenter/page/searching_page.dart';
-import 'package:battmobility_assignment/features/search_car/presenter/page/widget/show_on_map.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:timezone/data/latest.dart' as tz;
-import 'package:timezone/timezone.dart' as tz;
 
 void main() {
   tz.initializeTimeZones();
@@ -13,7 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,13 +40,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SearchingPage(),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: ()async{
-      //
-      //     },
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.add),
-      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

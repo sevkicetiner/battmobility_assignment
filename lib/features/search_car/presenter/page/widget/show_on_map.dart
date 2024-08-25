@@ -18,20 +18,9 @@ class ShowOnMaps extends StatefulWidget {
 }
 
 class _ShowOnMapsState extends State<ShowOnMaps> {
-  Set<Marker> _markers = {};
   BitmapDescriptor customIcon = BitmapDescriptor.defaultMarker;
   late GoogleMapController mapController;
-
-  final locations = const [
-    LatLng(37.42796133580664, -122.085749655962),
-    LatLng(37.41796133580689, -122.085749655962),
-    LatLng(37.43796133580623, -122.085749655962),
-    LatLng(37.42796133580634, -122.095749655962),
-    LatLng(37.42796133580698, -122.075749655962),
-  ];
-
   List<MarkerData> _customMarkers = [];
-
   Position? _currentPosition;
 
   @override

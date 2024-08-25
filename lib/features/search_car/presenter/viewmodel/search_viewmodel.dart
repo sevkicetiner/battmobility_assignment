@@ -6,7 +6,6 @@ import 'package:battmobility_assignment/features/search_car/domain/repository/se
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 
 
@@ -56,18 +55,14 @@ class SearchingViewModel extends ChangeNotifier {
   get customTileExpanded => _customTileExpanded;
 
   bool _isMap = false;
-
   bool get isMap => _isMap;
-
   set isMap(bool value) {
     _isMap = value;
     notifyListeners();
   }
 
   int _bottomNavCurrentIndex = 0;
-
   int get bottomNavCurrentIndex => _bottomNavCurrentIndex;
-
   set bottomNavCurrentIndex(int value) {
     _bottomNavCurrentIndex = value;
     notifyListeners();

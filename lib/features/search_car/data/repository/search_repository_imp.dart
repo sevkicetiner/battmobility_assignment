@@ -11,9 +11,7 @@ class SearchRepositoryImpl implements SearchingRepository {
 
   @override
   Future<SearchResponse?> searchVehicle(SearchVehicleEntity entity) async {
-    final result = await searchRemoteDatasource.searchVehicle(entity);
-    print("Future<SearchResponse?> searchVehicle( ${result?.vehicles?.length}");
-    return result;
+    return await searchRemoteDatasource.searchVehicle(entity);
   }
 
 }
